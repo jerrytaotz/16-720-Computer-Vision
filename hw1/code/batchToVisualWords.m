@@ -59,12 +59,13 @@ end
 %dump the files
 fprintf('Dumping the files\n');
 for i=1:l
+% for i=2:2
     wordMap = wordRepresentation{i};
     save([target, strrep(all_imagenames{i},'.jpg','.mat')],'wordMap');
 end
 
 %close the pool
 fprintf('Closing the pool\n');
-matlabpool close
+% matlabpool close
 
 end
